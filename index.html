@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      width: 100vw;
+      padding: 10px;
+    }
+
+    .grid a {
+      display: block;
+      transition: transform 0.2s;
+    }
+
+    .grid a:hover {
+      transform: scale(1.05);
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <a href="https://example.com/album1" target="_blank">
+      <img src="images/album1.jpg" alt="Album 1">
+    </a>
+    <a href="https://example.com/album2" target="_blank">
+      <img src="images/album2.jpg" alt="Album 2">
+    </a>
+    <a href="https://example.com/album3" target="_blank">
+      <img src="images/album3.jpg" alt="Album 3">
+    </a>
+    <!-- Add more albums as needed -->
+  </div>
+</body>
+</html>
